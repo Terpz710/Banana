@@ -1,0 +1,13 @@
+# Made by Terpz710 :p
+
+daily:
+  items:
+    - item: "diamond_sword"
+      name: "§bDaily Sword"
+      amount: 1
+      enchantments:
+        - "sharpness:2"
+        - "unbreaking:1"
+    - item: "golden_apple"
+      amount: 3
+    - item: "iron_pickaxe"

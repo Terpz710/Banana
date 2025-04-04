@@ -1,0 +1,9 @@
+name: Banana
+version: 1.0.0
+author: Terpz710
+api: 5.3.0
+main: terpz710\banana\Banana
+
+permissions:
+  banana.dailyreward:
+    default: true

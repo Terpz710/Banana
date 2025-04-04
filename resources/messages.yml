@@ -1,0 +1,38 @@
+# Made by Terpz710 :p
+
+# Join message when a player joins for the first time
+# {name} = Player name
+newcomer-message: "&l&8[&b+&8]&r&f {name}"
+
+# Title when a player joins for the first time
+# {name} = Player name
+newcomer-title: "&lWelcome!"
+
+# Subtitle when a player joins for the first time
+# {name} = Player name
+newcomer-subtitle: "&eTake a look around!"
+
+# Join message when a player joins
+# {name} = Player name
+join-message: "&l&8[&a+&8]&r&f {name}"
+
+# Title when a player joins
+# {name} = Player name
+join-title: "&lWelcome back!"
+
+# Subtitle when a player joins
+# {name} = Player name
+join-subtitle: "&bEnjoy your time {name}!"
+
+# Quit message when a player quits
+# {name} = Player name
+quit-message: "&l&8[&4+&8]&r&f {name}"
+
+# Message when a user runs the command outside of the server
+use-command-ingame: "Please run the command ingame!"
+
+# Message when a player tries to claim their daily reward but its already claimed
+already-claimed-dailyreward: "&cYou have already claimed your daily reward..."
+
+# Message when a player claims their daily reward
+claimed-dailyreward: "&aYou have received your daily reward!"
