@@ -21,6 +21,8 @@ class Banana extends PluginBase {
 
     protected static self $instance;
 
+    protected DataConnector $db;
+
     protected function onLoad() : void{
         self::$instance = $this;
     }
@@ -43,6 +45,10 @@ class Banana extends PluginBase {
         $this->getServer()->getPluginManager()->registerEvents(new EventListener(), $this);
 
         $this->getScheduler()->scheduleRepeatingTask(new CooldownTask(), 72000);
+    }
+
+    protected function onDisable() : void{
+        $this->db->close():
     }
 
     public static function getInstance() : self{
