@@ -34,10 +34,9 @@ class DailyReward {
     }
 
     public function claimDailyReward(Player $player) : void{
-        $config = new Config(Banana::getInstance()->getDataFolder() . "messages.yml");
-
         $this->hasClaimedDailyReward($player, function(bool $claimed) use ($player) {
             if ($claimed) {
+                $config = new Config(Banana::getInstance()->getDataFolder() . "messages.yml");
                 $player->sendMessage((string) new Messages($config, "already-claimed-dailyreward"));
                 return;
             }
