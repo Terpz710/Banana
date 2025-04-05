@@ -48,7 +48,7 @@ class Banana extends PluginBase {
     }
 
     protected function onDisable() : void{
-        $this->db->close():
+        $this->db->close();
     }
 
     public static function getInstance() : self{
