@@ -12,6 +12,8 @@ use pocketmine\utils\Config;
 
 use terpz710\banana\Banana;
 
+use terpz710\banana\reward\DailyReward;
+
 use terpz710\messages\Messages;
 
 use CortexPE\Commando\BaseCommand;
