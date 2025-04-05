@@ -6,6 +6,7 @@
         "pocketmine/pocketmine-mp": "^5.0.0",
         "cortexpe/commando": "*",
         "poggit/libasynql": "*",
+        "dapigguy/libpiggyupdatechecker": "*",
         "terpz710/libmessages": "*"
     },
     "autoload": {
