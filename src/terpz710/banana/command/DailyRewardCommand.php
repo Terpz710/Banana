@@ -8,6 +8,8 @@ use pocketmine\command\CommandSender;
 
 use pocketmine\player\Player;
 
+use pocketmine\utils\Config;
+
 use terpz710\banana\Banana;
 
 use terpz710\messages\Messages;
