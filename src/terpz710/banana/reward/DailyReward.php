@@ -23,7 +23,7 @@ class DailyReward {
 
     public function hasClaimedDailyReward(Player $player, callable $callback) : void{
         $name = strtolower($player->getName());
-        Banana::getInstance()->getDataBase()->executeSelect("get.cooldown", ["username" => $name], function(array $rows) use ($callback) {
+        Banana::getInstance()->getDataBase()->executeSelect("cooldowns.get", ["username" => $name], function(array $rows) use ($callback) {
             if (isset($rows[0])) {
                 $last = (int)$rows[0]["last_claim"];
                 $callback(time() - $last < 86400);
@@ -74,7 +74,7 @@ class DailyReward {
 
             $player->sendMessage((string) new Messages($config, "claimed-dailyreward"));
 
-            Banana::getInstance()->getDataBase()->executeChange("set.cooldown", [
+            Banana::getInstance()->getDataBase()->executeChange("cooldowns.set", [
                 "username" => strtolower($player->getName()),
                 "last_claim" => time()
             ]);
