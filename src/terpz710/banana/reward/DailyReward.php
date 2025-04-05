@@ -71,6 +71,7 @@ class DailyReward {
 
                 $player->getInventory()->addItem($item);
             }
+            $config = new Config(Banana::getInstance()->getDataFolder() . "messages.yml");
 
             $player->sendMessage((string) new Messages($config, "claimed-dailyreward"));
 
