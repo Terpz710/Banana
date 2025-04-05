@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace terpz710\enderkits\command;
+namespace terpz710\banana\command;
 
 use pocketmine\command\CommandSender;
 
